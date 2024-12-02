@@ -10,8 +10,7 @@ INPUT           OUTPUT           GIẢI THÍCH
 8               5        	       Ước số có dạng chính phương của 8 là: 1, 4
 ------------------------------------------------------------------------------
 17              1                Ước số có dạng chính phương của 17 là: 1
- 
-*/
+ */
 
 #include <iostream>
 using namespace std;
