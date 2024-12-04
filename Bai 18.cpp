@@ -1,20 +1,22 @@
 #include <iostream>
-#include <math.h>
 #include <iomanip>
 using namespace std;
+long double gttd(long double y) {
+    return (y < 0) ? -y : y;
+}
 long double tinh(long double x){
 long double tong = x;
 long double a = -1;
-long double b,bieuthuc;
+long double b = x;
+long double y;
 long double c = 1;
 for (int i = 1;;i++){
-    a = pow(-1,i);
-    b = pow(x,2*i+1);
-    c*= (2*i)*(2*i+1);
-bieuthuc = (a*b)/c;
-tong+=bieuthuc;
- if (abs(bieuthuc) < 0.00001) break;
-    }
+b*=x*x;
+c*= (2*i)*(2*i+1);
+y = a*(b/c);
+tong+=y;
+ if (gttd(y) < 0.00001) break;
+   a*=-1;}
     return tong;
 }
 int main(){
