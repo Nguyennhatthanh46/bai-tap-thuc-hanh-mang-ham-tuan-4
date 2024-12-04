@@ -1,4 +1,4 @@
-/* Viết hàm tìm ước số chung lớn nhất của hai số nguyên dương M và N.
+/*  Viết hàm tìm ước số chung lớn nhất của hai số nguyên dương M và N.
 
 INPUT
 Hai số nguyên dương M và N (<2 triệu, mặc định nhập đúng điều kiện).
